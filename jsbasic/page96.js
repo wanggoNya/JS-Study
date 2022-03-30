@@ -1,3 +1,15 @@
-if (guess == location1) { hits = hits + 1;
-} else if (guess == location2) { hits = hits + 1; } else if (guess == location3) { hits = hits + 1;
+var radius = 5.2;
+
+var theArea = calculateArea(radius);
+
+console.log("the area is : " + theArea);
+
+function calculateArea(r)   {
+    var area;
+    if( r <= 0) {
+        return 0;
+    } else {
+        area = Math.PI * r * r;
+        return area;
+    }
 }
